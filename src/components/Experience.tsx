@@ -23,7 +23,7 @@ const cases: CaseStudy[] = [
     ],
     result:
       'Un flujo verificable: el usuario ve el plan, sigue las herramientas y descarga los archivos producidos por el agente.',
-    github: 'https://github.com/Victor00128/NEXUS',
+    github: 'https://github.com/jc-morales-dev/NEXUS',
     demo: 'https://nexus-exec.vercel.app/',
   },
   {
@@ -37,7 +37,7 @@ const cases: CaseStudy[] = [
     ],
     result:
       'Una interfaz pública para probar texto, PDFs, imágenes y otros adjuntos con contexto, búsqueda y errores visibles.',
-    github: 'https://github.com/Victor00128/Chatbot-Vortex',
+    github: 'https://github.com/jc-morales-dev/Chatbot-Vortex',
     demo: 'https://chatbot-vortex.vercel.app/',
   },
 ]

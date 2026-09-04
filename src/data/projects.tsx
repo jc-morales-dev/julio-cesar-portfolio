@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { FaBrain, FaCarSide, FaCode, FaRobot } from 'react-icons/fa'
+import { FaBrain, FaCarSide, FaCode, FaMobileAlt, FaRobot } from 'react-icons/fa'
 
 /**
  * Modelo único para cada proyecto del portafolio.
@@ -18,8 +18,10 @@ export interface Project {
   tags: string[]
   github: string
   demo?: string
+  /** Texto del botón cuando `demo` no lleva a una demo web (ej. descargar un APK). */
+  demoLabel?: string
   featured?: boolean
-  status: 'live' | 'development' | 'completed' | 'code'
+  status: 'live' | 'development' | 'completed' | 'code' | 'release'
 }
 
 export const projects: Project[] = [
@@ -39,10 +41,31 @@ export const projects: Project[] = [
     icon: <FaBrain className="text-5xl sm:text-7xl" />,
     image: '/projects/nexus.webp',
     tags: ['Next.js', 'TypeScript', 'AI Agents', 'E2B Sandbox', 'OpenRouter', 'Tailwind'],
-    github: 'https://github.com/Victor00128/NEXUS',
+    github: 'https://github.com/jc-morales-dev/NEXUS',
     demo: 'https://nexus-exec.vercel.app/',
     featured: true,
     status: 'live',
+  },
+  {
+    slug: 'novaclaw',
+    title: 'NovaClaw',
+    summary:
+      'Agente de programación que corre entero dentro de un teléfono Android: Linux embebido, Node.js y terminal real, sin root ni servidor.',
+    problem:
+      'Las apps de IA para móvil son clientes de chat: mandan el mensaje a un servidor y muestran texto. No pueden leer tus archivos, ejecutar lo que escriben ni comprobar si funciona.',
+    built:
+      'Empaqueté un Linux completo (bootstrap de Termux) y Node.js dentro del APK, y monté encima el agente: llamada nativa a herramientas, ediciones quirúrgicas de archivos, terminal PTY y las capacidades del teléfono como herramientas.',
+    technical:
+      'Ejecuta binarios sin root en Android moderno cargando proot como librería nativa, lo que evita la restricción W^X sin recurrir al truco de targetSdk 28. El servidor del agente escucha solo en loopback con token por instalación.',
+    result:
+      'APK firmado y funcionando en hardware real, con 101 tests y typecheck en verde. Todo comando de shell pide aprobación y las credenciales nunca llegan a los procesos que lanza el agente.',
+    icon: <FaMobileAlt className="text-5xl sm:text-7xl" />,
+    image: '/projects/novaclaw.webp',
+    tags: ['Kotlin', 'TypeScript', 'Android', 'Node.js', 'proot', 'AI Agents'],
+    github: 'https://github.com/jc-morales-dev/NovaClaw',
+    demo: 'https://github.com/jc-morales-dev/NovaClaw/releases/latest',
+    demoLabel: 'Descargar APK',
+    status: 'release',
   },
   {
     slug: 'chatbot-vortex',
@@ -60,7 +83,7 @@ export const projects: Project[] = [
     icon: <FaRobot className="text-5xl sm:text-7xl" />,
     image: '/projects/vortex.webp',
     tags: ['React 19', 'TypeScript', 'BYOK', 'PDF e imágenes', 'Vite'],
-    github: 'https://github.com/Victor00128/Chatbot-Vortex',
+    github: 'https://github.com/jc-morales-dev/Chatbot-Vortex',
     demo: 'https://chatbot-vortex.vercel.app/',
     status: 'live',
   },
@@ -80,7 +103,7 @@ export const projects: Project[] = [
     icon: <FaCode className="text-5xl sm:text-7xl" />,
     image: '/projects/zenith.webp',
     tags: ['Electron', 'React', 'TypeScript', 'Monaco', 'Node-PTY'],
-    github: 'https://github.com/Victor00128/EDITOR-CODE',
+    github: 'https://github.com/jc-morales-dev/EDITOR-CODE',
     status: 'development',
   },
   {
@@ -99,7 +122,7 @@ export const projects: Project[] = [
     icon: <FaCarSide className="text-5xl sm:text-7xl" />,
     image: '/projects/escape-driver.png',
     tags: ['React 19', 'TypeScript', 'Canvas 2D', 'Web Audio', 'Game AI'],
-    github: 'https://github.com/Victor00128/Escape-Driver',
+    github: 'https://github.com/jc-morales-dev/Escape-Driver',
     demo: 'https://escape-driver.vercel.app/',
     status: 'live',
   },

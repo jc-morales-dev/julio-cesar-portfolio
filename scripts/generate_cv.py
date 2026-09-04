@@ -44,8 +44,8 @@ PHOTO_CANDIDATES = [
 NAME = "Julio Cesar Morales Alvarado"
 TITLE = "Desarrollador web · React · TypeScript · Integración de APIs de IA"
 EMAIL = "juliocesarmoralesalvarado9@gmail.com"
-GITHUB = "https://github.com/Victor00128"
-GITHUB_LABEL = "github.com/Victor00128"
+GITHUB = "https://github.com/jc-morales-dev"
+GITHUB_LABEL = "github.com/jc-morales-dev"
 LINKEDIN = "https://www.linkedin.com/in/julio-cesar-406314373/"
 LINKEDIN_LABEL = "linkedin.com/in/julio-cesar"
 SITE = "https://julio-cesar-portfolio.vercel.app"
@@ -90,7 +90,7 @@ PROJECTS = [
         "tech": "Next.js, TypeScript, E2B Sandbox, OpenRouter",
         "links": [
             ("Demo", "https://nexus-exec.vercel.app/"),
-            ("Repo", "https://github.com/Victor00128/NEXUS"),
+            ("Repo", "https://github.com/jc-morales-dev/NEXUS"),
         ],
     },
     {
@@ -105,7 +105,7 @@ PROJECTS = [
         "tech": "React, TypeScript, Gemini API, OpenAI API, PDF.js, Vercel",
         "links": [
             ("Demo", "https://chatbot-vortex.vercel.app/"),
-            ("Repo", "https://github.com/Victor00128/Chatbot-Vortex"),
+            ("Repo", "https://github.com/jc-morales-dev/Chatbot-Vortex"),
         ],
     },
 ]

@@ -44,8 +44,8 @@ const socialLinks = [
   {
     icon: FaGithub,
     label: 'GitHub',
-    href: 'https://github.com/Victor00128',
-    description: '@Victor00128',
+    href: 'https://github.com/jc-morales-dev',
+    description: '@jc-morales-dev',
     color: 'hover:bg-gray-500/10 hover:border-gray-400/50 hover:text-white',
   },
 ]

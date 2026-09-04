@@ -1,6 +1,6 @@
 # Portfolio — Julio Cesar Morales
 
-[![CI](https://github.com/Victor00128/julio-cesar-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Victor00128/julio-cesar-portfolio/actions/workflows/ci.yml)
+[![CI](https://github.com/jc-morales-dev/julio-cesar-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/jc-morales-dev/julio-cesar-portfolio/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0F172A.svg)](./LICENSE)
 
 Personal portfolio built with **React 19 + TypeScript + Vite + Tailwind CSS v4**.
@@ -34,7 +34,7 @@ Personal portfolio built with **React 19 + TypeScript + Vite + Tailwind CSS v4**
 ## Getting started
 
 ```bash
-git clone https://github.com/Victor00128/julio-cesar-portfolio.git
+git clone https://github.com/jc-morales-dev/julio-cesar-portfolio.git
 cd julio-cesar-portfolio
 npm install
 npm run dev

@@ -8,6 +8,8 @@ const statusConfig = {
   code: { label: 'Código disponible', color: 'text-cyan-accent', bg: 'bg-cyan-accent' },
   development: { label: 'En desarrollo', color: 'text-yellow-300', bg: 'bg-yellow-300' },
   completed: { label: 'Completado', color: 'text-gray-200', bg: 'bg-gray-200' },
+  // Para lo que no se prueba en el navegador: se descarga y se instala.
+  release: { label: 'APK descargable', color: 'text-orange-300', bg: 'bg-orange-400' },
 }
 
 const detailLabels = {
@@ -35,11 +37,11 @@ function ProjectLinks({ project }: { project: Project }) {
           href={project.demo}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Probar demo en vivo de ${project.title}`}
+          aria-label={`${project.demoLabel ?? 'Probar demo en vivo'} de ${project.title}`}
           className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-cyan-accent px-4 py-2 text-sm font-bold text-black transition-all hover:bg-[#00e5ff] hover:shadow-lg hover:shadow-cyan-accent/20"
         >
           <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
-          Probar demo
+          {project.demoLabel ?? 'Probar demo'}
         </a>
       )}
     </div>

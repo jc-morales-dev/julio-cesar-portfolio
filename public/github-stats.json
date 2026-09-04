@@ -1,54 +1,60 @@
 {
-  "repos": 6,
-  "ownRepos": 6,
+  "repos": 8,
+  "ownRepos": 8,
   "stars": 2,
   "forks": 0,
-  "commits": 145,
+  "commits": 303,
   "followers": 1,
   "languages": [
     {
       "name": "TypeScript",
-      "bytes": 1367158,
-      "percent": 92.9,
+      "bytes": 8016449,
+      "percent": 88,
       "color": "#0099cc"
     },
     {
+      "name": "Java",
+      "bytes": 407791,
+      "percent": 4.5,
+      "color": "#00aadd"
+    },
+    {
+      "name": "Kotlin",
+      "bytes": 281781,
+      "percent": 3.1,
+      "color": "#007799"
+    },
+    {
       "name": "JavaScript",
-      "bytes": 42220,
-      "percent": 2.9,
+      "bytes": 238169,
+      "percent": 2.6,
       "color": "#00C9FF"
     },
     {
+      "name": "Shell",
+      "bytes": 61540,
+      "percent": 0.7,
+      "color": "#00b8e6"
+    },
+    {
       "name": "CSS",
-      "bytes": 32798,
-      "percent": 2.2,
+      "bytes": 34421,
+      "percent": 0.4,
       "color": "#0077aa"
     },
     {
       "name": "Python",
-      "bytes": 19887,
-      "percent": 1.4,
+      "bytes": 28315,
+      "percent": 0.3,
       "color": "#005577"
     },
     {
-      "name": "HTML",
-      "bytes": 7306,
-      "percent": 0.5,
-      "color": "#00e5ff"
-    },
-    {
-      "name": "Dockerfile",
-      "bytes": 1234,
+      "name": "C",
+      "bytes": 11045,
       "percent": 0.1,
-      "color": "hsl(225, 90%, 50%)"
-    },
-    {
-      "name": "Shell",
-      "bytes": 778,
-      "percent": 0.1,
-      "color": "#00b8e6"
+      "color": "#0088aa"
     }
   ],
-  "profileUrl": "https://github.com/Victor00128",
-  "updatedAt": 1788175370455
+  "profileUrl": "https://github.com/jc-morales-dev",
+  "updatedAt": 1788498427083
 }

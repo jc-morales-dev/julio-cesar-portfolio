@@ -283,7 +283,7 @@ export default function App() {
               className="flex justify-center gap-4 mt-6"
             >
               {[
-                { href: 'https://github.com/Victor00128', icon: <FaGithub />, label: 'GitHub' },
+                { href: 'https://github.com/jc-morales-dev', icon: <FaGithub />, label: 'GitHub' },
                 { href: 'https://www.linkedin.com/in/julio-cesar-406314373/', icon: <FaLinkedin />, label: 'LinkedIn' },
                 { href: 'mailto:juliocesarmoralesalvarado9@gmail.com', icon: <FaEnvelope />, label: 'Email' },
               ].map(s => (
@@ -477,12 +477,12 @@ export default function App() {
           </a>
           <span className="text-gray-500" aria-hidden="true">·</span>
           <a
-            href="https://github.com/Victor00128"
+            href="https://github.com/jc-morales-dev"
             target="_blank"
             rel="noopener noreferrer"
             className="px-2 py-2 text-xs text-gray-300 hover:text-cyan-accent transition-colors font-mono"
           >
-            @Victor00128
+            @jc-morales-dev
           </a>
           <span className="text-gray-500" aria-hidden="true">·</span>
           <a

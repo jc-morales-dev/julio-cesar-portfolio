@@ -7,7 +7,7 @@ const statuses = [
     icon: FaRocket,
     label: 'Enfocado en',
     text: 'Seguir mejorando Chatbot Vortex: contexto largo, memoria persistente y soporte multiagente.',
-    link: 'https://github.com/Victor00128/Chatbot-Vortex',
+    link: 'https://github.com/jc-morales-dev/Chatbot-Vortex',
     iconColor: 'text-cyan-accent',
     bgColor: 'bg-cyan-accent/10 group-hover:bg-cyan-accent/20',
   },

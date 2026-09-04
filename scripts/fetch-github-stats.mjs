@@ -14,7 +14,7 @@
 
 import { writeFile, mkdir } from 'node:fs/promises'
 
-const USERNAME = 'Victor00128'
+const USERNAME = 'jc-morales-dev'
 const OUTPUT = 'public/github-stats.json'
 
 const langColors = {
