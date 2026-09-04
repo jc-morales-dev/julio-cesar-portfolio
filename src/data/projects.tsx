@@ -29,13 +29,13 @@ export const projects: Project[] = [
     slug: 'nexus',
     title: 'NEXUS',
     summary:
-      'Agente de IA capaz de planificar tareas, ejecutar código en un sandbox aislado y devolver archivos utilizables.',
+      'Workspace multi-modelo con agente en sandbox (derivado de G0DM0D3/AGPL): planifica, ejecuta en E2B y entrega archivos descargables.',
     problem:
       'Los asistentes tradicionales describen cómo resolver una tarea, pero dejan la ejecución y los archivos finales en manos del usuario.',
     built:
-      'Construí el loop del agente, la selección automática de habilidades, la ejecución de herramientas y una interfaz que expone cada paso.',
+      'Basado en G0DM0D3 (AGPL): aporté orquestación E2B, skills y timeline de herramientas en la UI, hardening (telemetry/CORS/BYOK) y la demo pública.',
     technical:
-      'Orquestación multi-modelo con OpenRouter, sandbox Linux de E2B y recuperación de artefactos generados dentro del contenedor.',
+      'Derivado de G0DM0D3; encima: multi-modelo vía OpenRouter, sandbox E2B, captura de artefactos, y controles de telemetría/CORS/BYOK.',
     result:
       'Una demo pública donde el agente puede ejecutar y probar código, procesar archivos y entregar resultados descargables.',
     icon: <FaBrain className="text-5xl sm:text-7xl" />,
@@ -50,15 +50,15 @@ export const projects: Project[] = [
     slug: 'novaclaw',
     title: 'NovaClaw',
     summary:
-      'Agente de programación que corre entero dentro de un teléfono Android: Linux embebido, Node.js y terminal real, sin root ni servidor.',
+      'Prototipo v0.1 de agente on-device en Android (1 device/tester): Linux embebido, Node.js y terminal real, sin root ni servidor.',
     problem:
       'Las apps de IA para móvil son clientes de chat: mandan el mensaje a un servidor y muestran texto. No pueden leer tus archivos, ejecutar lo que escriben ni comprobar si funciona.',
     built:
-      'Empaqueté un Linux completo (bootstrap de Termux) y Node.js dentro del APK, y monté encima el agente: llamada nativa a herramientas, ediciones quirúrgicas de archivos, terminal PTY y las capacidades del teléfono como herramientas.',
+      'v0.1 temprano: empaqueté Linux (Termux) + Node en el APK y monté el agente (tools nativas, edits, PTY, conectores del teléfono). Probado por un tester en un solo dispositivo.',
     technical:
       'Ejecuta binarios sin root en Android moderno cargando proot como librería nativa, lo que evita la restricción W^X sin recurrir al truco de targetSdk 28. El servidor del agente escucha solo en loopback con token por instalación.',
     result:
-      'APK firmado y funcionando en hardware real, con 101 tests y typecheck en verde. Todo comando de shell pide aprobación y las credenciales nunca llegan a los procesos que lanza el agente.',
+      'APK firmado en un OPPO CPH2557 (Android 15). v0.1 / 1 device · 1 tester — no hay matriz multi-dispositivo validada. Tests unitarios en el repo; shell siempre pide aprobación.',
     icon: <FaMobileAlt className="text-5xl sm:text-7xl" />,
     image: '/projects/novaclaw.webp',
     tags: ['Kotlin', 'TypeScript', 'Android', 'Node.js', 'proot', 'AI Agents'],

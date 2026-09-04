@@ -14,12 +14,12 @@ interface CaseStudy {
 const cases: CaseStudy[] = [
   {
     title: 'NEXUS',
-    context: 'Agente autónomo · 2026–presente',
+    context: 'Demo de agente (derivado G0DM0D3) · 2026',
     problem:
       'Pasar de una respuesta conversacional a un agente que haga el trabajo y entregue archivos fuera de su entorno de ejecución.',
     decisions: [
-      'Controlar el ciclo de plan, herramienta, observación y parada desde código propio.',
-      'Aislar la ejecución en E2B y capturar los artefactos antes de cerrar el sandbox.',
+      'Partir de G0DM0D3 (AGPL) y adaptar orquestación, skills y timeline visibles en la UI.',
+      'Aislar la ejecución en E2B, capturar artefactos y endurecer telemetry/CORS/BYOK para la demo.',
     ],
     result:
       'Un flujo verificable: el usuario ve el plan, sigue las herramientas y descarga los archivos producidos por el agente.',
@@ -28,7 +28,7 @@ const cases: CaseStudy[] = [
   },
   {
     title: 'Chatbot Vortex',
-    context: 'Cliente multimodal · 2024–presente',
+    context: 'Cliente multimodal · feb 2026–presente',
     problem:
       'Mantener conversaciones útiles con distintos modelos y formatos sin ocultar al usuario cómo se configura cada proveedor.',
     decisions: [
