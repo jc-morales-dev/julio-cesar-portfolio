@@ -198,7 +198,7 @@ export default function Contact() {
             <h3 className="mb-2 text-lg font-semibold text-white">¿Hablamos?</h3>
             <p className="text-sm leading-relaxed text-gray-300">
               Estoy disponible para proyectos freelance, oportunidades remotas y colaboraciones en
-              productos web o integraciones de IA.
+              demos web o integraciones de IA.
             </p>
           </motion.div>
 

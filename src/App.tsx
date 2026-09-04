@@ -203,7 +203,7 @@ export default function App() {
 
             {/* Título principal — fijo y directo: rol, especialidad y propuesta de valor. */}
             <h1 className="mx-auto max-w-4xl text-balance text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-              Desarrollador Full Stack especializado en React, TypeScript e IA.
+              Desarrollador React / TypeScript — demos e integración de IA.
             </h1>
 
             <motion.p
@@ -212,8 +212,8 @@ export default function App() {
               transition={{ delay: 0.8 }}
               className="mx-auto mt-5 max-w-3xl text-pretty text-base leading-relaxed text-gray-200 sm:text-lg"
             >
-              Construyo productos web reales: agentes que ejecutan tareas, chatbots multimodales y
-              aplicaciones completas, desde la interfaz hasta el despliegue.
+              Construyo demos y prototipos: agentes que ejecutan tareas, chatbots multimodales y
+              aplicaciones de punta a punta, desde la interfaz hasta el despliegue.
             </motion.p>
 
             {/* Línea de terminal decorativa */}
@@ -379,14 +379,14 @@ export default function App() {
                 <p className="text-gray-300">
                   <span className="text-cyan-accent mr-2" aria-hidden="true">{'>'}</span>
                   Soy <span className="text-cyan-accent font-semibold">Julio Cesar</span>, desarrollador
-                  Full Stack enfocado en React, TypeScript, Node.js e integración de IA en producto.
+                  React / TypeScript enfocado en Node.js e integración de IA en demos y prototipos.
                 </p>
 
                 {/* Párrafo 2: especialidad */}
                 <p className="text-gray-300">
                   <span className="text-cyan-accent mr-2" aria-hidden="true">{'>'}</span>
                   Trabajo de extremo a extremo: diseño la interfaz, conecto servicios y modelos,
-                  resuelvo estados de carga y error, y preparo el despliegue para que el producto se
+                  resuelvo estados de carga y error, y preparo el despliegue para que el demo se
                   pueda probar de verdad.
                 </p>
 
