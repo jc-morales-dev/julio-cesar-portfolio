@@ -12,6 +12,10 @@ const path = window.location.pathname.replace(/\/+$/, "") || "/";
 const isVortexCase =
   path === "/case-studies/vortex" || path === "/projects/vortex";
 
+if (isVortexCase) {
+  document.title = "Vortex Case Study | Julio Cesar Morales";
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <MotionConfig reducedMotion="user">
