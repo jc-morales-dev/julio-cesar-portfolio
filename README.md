@@ -3,6 +3,8 @@
 [![CI](https://github.com/jc-morales-dev/julio-cesar-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/jc-morales-dev/julio-cesar-portfolio/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0F172A.svg)](./LICENSE)
 
+**Status:** `active` — live portfolio. [Site](https://julio-cesar-portfolio.vercel.app)
+
 Personal portfolio built with **React 19 + TypeScript + Vite + Tailwind CSS v4**.
 
 **Live:** [julio-cesar-portfolio.vercel.app](https://julio-cesar-portfolio.vercel.app)
