@@ -30,7 +30,7 @@ const statuses = [
   {
     icon: FaBriefcase,
     label: 'Open to Work',
-    text: 'Disponible para proyectos freelance y colaboraciones Full Stack. Especialmente proyectos que involucren IA.',
+    text: 'Disponible para proyectos freelance y colaboraciones en React / TypeScript. Especialmente proyectos que involucren IA.',
     link: null,
     iconColor: 'text-green-400',
     bgColor: 'bg-green-400/10 group-hover:bg-green-400/20',
