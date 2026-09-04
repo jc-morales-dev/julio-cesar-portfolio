@@ -20,6 +20,8 @@ export interface Project {
   demo?: string
   /** Texto del botón cuando `demo` no lleva a una demo web (ej. descargar un APK). */
   demoLabel?: string
+  /** Ruta interna al caso de estudio detallado. */
+  caseStudyPath?: string
   featured?: boolean
   status: 'live' | 'development' | 'completed' | 'code' | 'release'
 }
@@ -85,6 +87,7 @@ export const projects: Project[] = [
     tags: ['React 19', 'TypeScript', 'BYOK', 'PDF e imágenes', 'Vite'],
     github: 'https://github.com/jc-morales-dev/Chatbot-Vortex',
     demo: 'https://chatbot-vortex.vercel.app/',
+    caseStudyPath: '/case-studies/vortex',
     status: 'live',
   },
   {

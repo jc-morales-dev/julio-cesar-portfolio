@@ -32,6 +32,15 @@ function ProjectLinks({ project }: { project: Project }) {
         <FaGithub className="text-base" aria-hidden="true" />
         Ver código
       </a>
+      {project.caseStudyPath && (
+        <a
+          href={project.caseStudyPath}
+          aria-label={`Leer caso de estudio de ${project.title}`}
+          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-cyan-accent/50 bg-cyan-accent/10 px-4 py-2 text-sm font-semibold text-cyan-accent transition-all hover:bg-cyan-accent/20"
+        >
+          Caso de estudio
+        </a>
+      )}
       {project.demo && (
         <a
           href={project.demo}
@@ -183,7 +192,8 @@ export default function FeaturedProject() {
     <div className="mx-auto w-full max-w-5xl">
       <p className="mx-auto mb-8 max-w-2xl text-center text-sm leading-relaxed text-gray-300 sm:text-base">
         Productos propios que se pueden abrir, probar y revisar en código. NEXUS es el trabajo más
-        completo; los demás muestran amplitud entre IA, herramientas de desarrollo y Canvas.
+        completo técnicamente; Vortex es el caso de estudio comercial (BYOK multi-proveedor). Los demás
+        muestran amplitud entre agentes móviles, herramientas de desarrollo y Canvas.
       </p>
 
       <NexusCase project={projects[0]} />

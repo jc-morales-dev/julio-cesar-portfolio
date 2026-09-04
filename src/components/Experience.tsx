@@ -9,6 +9,7 @@ interface CaseStudy {
   result: string
   github?: string
   demo?: string
+  caseStudyPath?: string
 }
 
 const cases: CaseStudy[] = [
@@ -29,6 +30,7 @@ const cases: CaseStudy[] = [
   {
     title: 'Chatbot Vortex',
     context: 'Cliente multimodal · feb 2026–presente',
+    caseStudyPath: '/case-studies/vortex',
     problem:
       'Mantener conversaciones útiles con distintos modelos y formatos sin ocultar al usuario cómo se configura cada proveedor.',
     decisions: [
@@ -101,6 +103,14 @@ export default function Experience() {
                 >
                   <FaGithub aria-hidden="true" />
                   Código
+                </a>
+              )}
+              {item.caseStudyPath && (
+                <a
+                  href={item.caseStudyPath}
+                  className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-cyan-accent/40 bg-cyan-accent/10 px-3 py-2 text-sm font-semibold text-cyan-accent transition-colors hover:bg-cyan-accent/20"
+                >
+                  Caso de estudio
                 </a>
               )}
               {item.demo && (

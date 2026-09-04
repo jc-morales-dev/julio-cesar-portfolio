@@ -395,7 +395,7 @@ export default function App() {
                   <span className="text-cyan-accent mr-2" aria-hidden="true">{'>'}</span>
                   Mis mejores ejemplos son <span className="text-cyan-accent font-semibold">NEXUS</span>,
                   que ejecuta tareas en un sandbox, y{' '}
-                  <a href="https://chatbot-vortex.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a href="/case-studies/vortex"
                     className="text-cyan-accent underline-offset-4 hover:underline">
                     Chatbot Vortex
                   </a>
