@@ -27,6 +27,10 @@ export interface Project {
   demo?: string
   /** Texto del botón cuando `demo` no lleva a una demo web (ej. descargar un APK). */
   demoLabel?: string
+  /** Link de ejemplo público (ej. cotización compartida) visible en la card. */
+  exampleUrl?: string
+  /** Texto del botón del link de ejemplo. */
+  exampleLabel?: string
   /** Ruta interna al caso de estudio detallado. */
   caseStudyPath?: string
   featured?: boolean
@@ -38,7 +42,7 @@ export const projects: Project[] = [
     slug: 'coti',
     title: 'Coti',
     summary:
-      'App de presupuestos: cargás los ítems, calcula el total y generás un link que tu cliente abre sin crear cuenta.',
+      'App de cotizaciones con auth y link público: cargás los ítems, calculás el total y compartís una página que el cliente abre sin crear cuenta.',
     problem:
       'Pasar un presupuesto suele terminar en un PDF adjunto o un mensaje suelto: el cliente no sabe si está vigente y quien lo envía no tiene registro de en qué quedó cada uno.',
     built:
@@ -46,12 +50,14 @@ export const projects: Project[] = [
     technical:
       'Postgres con Row Level Security: los visitantes anónimos no tienen ninguna política sobre las tablas y entran por una función SECURITY DEFINER que recibe el slug. Una política del tipo "estado distinto de borrador" habría dejado listar los clientes de todos los usuarios, porque RLS filtra filas pero no puede exigir conocer el slug. El guardado de ítems es transaccional y los importes se suman en centavos enteros.',
     result:
-      'Demo pública con cuenta de prueba cargada, correos de autenticación con SMTP propio y CI en cada push. La página del cliente es responsive e imprimible.',
+      'Demo pública con auth, cuenta de prueba y SMTP propio; link público por cotización (responsive e imprimible) y CI en cada push.',
     icon: <FaFileInvoiceDollar className="text-5xl sm:text-7xl" />,
     image: '/projects/coti.webp',
     tags: ['React 19', 'TypeScript', 'Supabase', 'PostgreSQL', 'RLS', 'Tailwind v4'],
     github: 'https://github.com/jc-morales-dev/cotizador',
     demo: 'https://cotizador-opal-five.vercel.app',
+    exampleUrl: 'https://cotizador-opal-five.vercel.app/c/Gh4zJFsjA4O2',
+    exampleLabel: 'Ver ejemplo público',
     status: 'live',
   },
   {

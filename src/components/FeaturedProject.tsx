@@ -53,6 +53,18 @@ function ProjectLinks({ project }: { project: Project }) {
           {project.demoLabel ?? 'Probar demo'}
         </a>
       )}
+      {project.exampleUrl && (
+        <a
+          href={project.exampleUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${project.exampleLabel ?? 'Ver ejemplo público'} de ${project.title}`}
+          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-cyan-accent/50 bg-cyan-accent/10 px-4 py-2 text-sm font-semibold text-cyan-accent transition-all hover:bg-cyan-accent/20"
+        >
+          <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
+          {project.exampleLabel ?? 'Ver ejemplo público'}
+        </a>
+      )}
     </div>
   )
 }
@@ -188,6 +200,9 @@ function NexusCase({ project }: { project: Project }) {
 }
 
 export default function FeaturedProject() {
+  const featuredProject = projects.find(project => project.featured) ?? projects[0]
+  const demoProjects = projects.filter(project => project.slug !== featuredProject.slug)
+
   return (
     <div className="mx-auto w-full max-w-5xl">
       <p className="mx-auto mb-8 max-w-2xl text-center text-sm leading-relaxed text-gray-300 sm:text-base">
@@ -196,10 +211,10 @@ export default function FeaturedProject() {
         muestran amplitud entre agentes móviles, herramientas de desarrollo y Canvas.
       </p>
 
-      <NexusCase project={projects[0]} />
+      <NexusCase project={featuredProject} />
 
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-        {projects.slice(1).map((project, index) => (
+        {demoProjects.map((project, index) => (
           <ProjectCard key={project.slug} project={project} index={index + 1} />
         ))}
       </div>
