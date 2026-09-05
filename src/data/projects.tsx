@@ -1,5 +1,12 @@
 import type { ReactNode } from 'react'
-import { FaBrain, FaCarSide, FaCode, FaMobileAlt, FaRobot } from 'react-icons/fa'
+import {
+  FaBrain,
+  FaCarSide,
+  FaCode,
+  FaFileInvoiceDollar,
+  FaMobileAlt,
+  FaRobot,
+} from 'react-icons/fa'
 
 /**
  * Modelo único para cada proyecto del portafolio.
@@ -27,6 +34,26 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'coti',
+    title: 'Coti',
+    summary:
+      'App de presupuestos: cargás los ítems, calcula el total y generás un link que tu cliente abre sin crear cuenta.',
+    problem:
+      'Pasar un presupuesto suele terminar en un PDF adjunto o un mensaje suelto: el cliente no sabe si está vigente y quien lo envía no tiene registro de en qué quedó cada uno.',
+    built:
+      'Cuentas con registro y recuperación de contraseña, editor de ítems con total en vivo, estados de borrador a cobrada, y una página pública por cotización con los datos de quien la emite.',
+    technical:
+      'Postgres con Row Level Security: los visitantes anónimos no tienen ninguna política sobre las tablas y entran por una función SECURITY DEFINER que recibe el slug. Una política del tipo "estado distinto de borrador" habría dejado listar los clientes de todos los usuarios, porque RLS filtra filas pero no puede exigir conocer el slug. El guardado de ítems es transaccional y los importes se suman en centavos enteros.',
+    result:
+      'Demo pública con cuenta de prueba cargada, correos de autenticación con SMTP propio y CI en cada push. La página del cliente es responsive e imprimible.',
+    icon: <FaFileInvoiceDollar className="text-5xl sm:text-7xl" />,
+    image: '/projects/coti.webp',
+    tags: ['React 19', 'TypeScript', 'Supabase', 'PostgreSQL', 'RLS', 'Tailwind v4'],
+    github: 'https://github.com/jc-morales-dev/cotizador',
+    demo: 'https://cotizador-opal-five.vercel.app',
+    status: 'live',
+  },
   {
     slug: 'nexus',
     title: 'NEXUS',
