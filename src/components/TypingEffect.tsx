@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 // Línea decorativa del hero. El título de verdad es el <h1>, que no se anima:
 // esto es solo adorno, por eso va oculto a lectores de pantalla.
 const phrases = [
-  'productos web completos',
+  'demos web y APIs',
   'React · TypeScript · Node',
-  'IA integrada en producto',
+  'IA en demos e integraciones',
   'disponible para trabajar',
 ];
 

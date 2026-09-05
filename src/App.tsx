@@ -337,7 +337,7 @@ export default function App() {
         <div className="gradient-line max-w-lg mx-auto" />
 
         {/* ===== Proyectos: evidencia pública después de la oferta de servicios ===== */}
-        <Section id="projects" title="Productos que he construido">
+        <Section id="projects" title="Demos que he construido">
           <FeaturedProject />
         </Section>
 
