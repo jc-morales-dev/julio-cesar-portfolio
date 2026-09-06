@@ -85,15 +85,15 @@ export const projects: Project[] = [
     slug: 'novaclaw',
     title: 'NovaClaw',
     summary:
-      'Prototipo v0.1 de agente on-device en Android (1 device/tester): Linux embebido, Node.js y terminal real, sin root ni servidor.',
+      'Prototipo v0.1 de agente on-device en Android (varios Android personales): Linux embebido, Node.js y terminal real, sin root ni servidor. Sideload arm64; no iOS.',
     problem:
       'Las apps de IA para móvil son clientes de chat: mandan el mensaje a un servidor y muestran texto. No pueden leer tus archivos, ejecutar lo que escriben ni comprobar si funciona.',
     built:
-      'v0.1 temprano: empaqueté Linux (Termux) + Node en el APK y monté el agente (tools nativas, edits, PTY, conectores del teléfono). Probado por un tester en un solo dispositivo.',
+      'v0.1 temprano: empaqueté Linux (Termux) + Node en el APK y monté el agente (tools nativas, edits, PTY, conectores del teléfono). Probado por el autor en varios celulares Android personales.',
     technical:
       'Ejecuta binarios sin root en Android moderno cargando proot como librería nativa, lo que evita la restricción W^X sin recurrir al truco de targetSdk 28. El servidor del agente escucha solo en loopback con token por instalación.',
     result:
-      'APK firmado en un OPPO CPH2557 (Android 15). v0.1 / 1 device · 1 tester — no hay matriz multi-dispositivo validada. Tests unitarios en el repo; shell siempre pide aprobación.',
+      'Prototipo v0.1. APK por sideload para Android (arm64). No corre en iOS. Probado por el autor en varios celulares Android personales — no es release de producción ni certificado por fabricantes. Tests unitarios en el repo; shell siempre pide aprobación.',
     icon: <FaMobileAlt className="text-5xl sm:text-7xl" />,
     image: '/projects/novaclaw.webp',
     tags: ['Kotlin', 'TypeScript', 'Android', 'Node.js', 'proot', 'AI Agents'],
