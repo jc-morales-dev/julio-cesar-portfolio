@@ -3,30 +3,30 @@
   "ownRepos": 9,
   "stars": 3,
   "forks": 0,
-  "commits": 400,
+  "commits": 406,
   "followers": 1,
   "languages": [
     {
       "name": "TypeScript",
-      "bytes": 8385032,
-      "percent": 88.2,
+      "bytes": 8459981,
+      "percent": 88,
       "color": "#0099cc"
     },
     {
       "name": "Java",
       "bytes": 407791,
-      "percent": 4.3,
+      "percent": 4.2,
       "color": "#00aadd"
     },
     {
       "name": "Kotlin",
       "bytes": 281803,
-      "percent": 3,
+      "percent": 2.9,
       "color": "#007799"
     },
     {
       "name": "JavaScript",
-      "bytes": 238805,
+      "bytes": 240880,
       "percent": 2.5,
       "color": "#00C9FF"
     },
@@ -35,6 +35,12 @@
       "bytes": 61540,
       "percent": 0.6,
       "color": "#00b8e6"
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 37942,
+      "percent": 0.4,
+      "color": "hsl(225, 90%, 50%)"
     },
     {
       "name": "CSS",
@@ -47,14 +53,8 @@
       "bytes": 28327,
       "percent": 0.3,
       "color": "#005577"
-    },
-    {
-      "name": "HTML",
-      "bytes": 20383,
-      "percent": 0.2,
-      "color": "#00e5ff"
     }
   ],
   "profileUrl": "https://github.com/jc-morales-dev",
-  "updatedAt": 1788775098601
+  "updatedAt": 1789381265714
 }
