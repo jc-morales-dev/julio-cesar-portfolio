@@ -1,15 +1,15 @@
 {
-  "repos": 9,
-  "ownRepos": 9,
+  "repos": 10,
+  "ownRepos": 10,
   "stars": 4,
   "forks": 0,
-  "commits": 406,
+  "commits": 423,
   "followers": 1,
   "languages": [
     {
       "name": "TypeScript",
       "bytes": 8459981,
-      "percent": 88,
+      "percent": 86.9,
       "color": "#0099cc"
     },
     {
@@ -31,6 +31,12 @@
       "color": "#00C9FF"
     },
     {
+      "name": "Python",
+      "bytes": 151168,
+      "percent": 1.6,
+      "color": "#005577"
+    },
+    {
       "name": "Shell",
       "bytes": 61540,
       "percent": 0.6,
@@ -40,21 +46,15 @@
       "name": "PLpgSQL",
       "bytes": 37942,
       "percent": 0.4,
-      "color": "hsl(225, 90%, 50%)"
+      "color": "hsl(197, 90%, 44%)"
     },
     {
       "name": "CSS",
       "bytes": 35363,
       "percent": 0.4,
       "color": "#0077aa"
-    },
-    {
-      "name": "Python",
-      "bytes": 28327,
-      "percent": 0.3,
-      "color": "#005577"
     }
   ],
   "profileUrl": "https://github.com/jc-morales-dev",
-  "updatedAt": 1792405923264
+  "updatedAt": 1793011626258
 }
